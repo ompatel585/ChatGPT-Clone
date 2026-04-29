@@ -3,8 +3,8 @@ import InputBox from './InputBox.jsx';
 
 const ChatArea = ({ messages, loading, error, input, onInputChange, onSend, onKeyPress, currentModel, onModelChange }) => {
   return (
-    <div className="flex-1 flex flex-col">
-      <div className="bg-gray-800 border-b border-gray-700 p-6">
+    <div className="flex-1 flex flex-col overflow-hidden">
+      <div className="bg-gray-800 border-b border-gray-700 p-6 shrink-0">
         <h1 className="text-2xl font-bold">Gemini Chat</h1>
       </div>
       <MessageList messages={messages} loading={loading} error={error} />

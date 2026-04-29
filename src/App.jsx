@@ -138,7 +138,7 @@ function App() {
   if (!currentChatId) return <div>Loading...</div>;
 
   return (
-    <div className="flex h-screen bg-gradient-to-b from-gray-900 to-black text-white">
+    <div className="flex h-screen bg-gradient-to-b from-gray-900 to-black text-white overflow-hidden">
       <Sidebar chats={chats} currentChatId={currentChatId} onSwitchChat={switchChat} onDeleteChat={deleteChat} onNewChat={newChat} />
       <div className="flex-1 flex flex-col">
         <ChatArea 

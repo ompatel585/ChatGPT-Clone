@@ -13,7 +13,7 @@ const InputBox = ({ input, onInputChange, onSend, loading, onKeyPress, currentMo
   }, [input]);
 
   return (
-    <div className="bg-gray-800 border-t border-gray-700 p-6">
+    <div className="bg-gray-800 border-t border-gray-700 p-6 shrink-0">
       <div className="max-w-4xl mx-auto flex gap-2 items-end">
         <textarea
           ref={textareaRef}
@@ -40,4 +40,3 @@ const InputBox = ({ input, onInputChange, onSend, loading, onKeyPress, currentMo
 };
 
 export default InputBox;
-
